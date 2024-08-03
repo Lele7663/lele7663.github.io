@@ -1,0 +1,211 @@
+/* General reset and box-sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #1E90FF; /* A bright blue color for visibility */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the link text bold */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #00BFFF; /* Change color on hover for better visual feedback */
+}
+
+img {
+    display: block;          /* Ensures the image takes its own line */
+    max-width: 100%;         /* Makes sure the image doesn't overflow its container */
+    height: auto;            /* Maintains aspect ratio */
+    margin: 20px auto;       /* Centers the image and adds vertical spacing */
+    border: 2px solid #ddd;  /* Adds a subtle border around the image */
+    border-radius: 8px;      /* Rounds the corners of the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+}
+
+h3 {
+    font-size: 1.3em; /* Adjust size as needed */
+    margin-bottom: 20px; /* Add some spacing below the <h3> */
+}
+
+/* Body styling */
+body {
+    background-color: #030c2a;
+    font-family: "Montserrat", sans-serif;
+    color: #7A65DB;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #232323;
+}
+
+/* Logo styling */
+.logo {
+    font-weight: 600;
+    color: #7A65DB;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #00ffd5;
+}
+
+/* Navigation styling */
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+}
+
+.nav__links li {
+    margin: 0 15px;
+}
+
+.nav__links a {
+    font-weight: 500;
+    color: #7A65DB;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav__links a:hover {
+    color: #00ffd5;
+}
+
+/* Call to action button styling */
+.cta {
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #7A65DB;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: rgba(25, 0, 255, 0.527);
+}
+
+/* Main content styling */
+.main {
+    padding: 20px 5%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main h1 {
+    font-size: 2.3em;
+    margin-bottom: 20px;
+}
+
+.main h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.main p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Remove dots from lists */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav__links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav__links li {
+        margin: 10px 0;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 5%;
+    }
+
+    .main {
+        padding: 20px 10px;
+    }
+}
+
+/* Image Container Styling */
+.image-container {
+    position: relative;
+    display: inline-block;
+    text-align: center; /* Centers the text and image together */
+    margin: 20px auto; /* Centers the container itself */
+}
+
+.image-container img {
+    width: 1000px; /* Adjust the size as needed */
+    height: auto;
+}
+
+.image-container .credit {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff; /* White text color */
+    padding: 2px 5px; /* Some padding */
+    font-size: 12px; /* Smaller font size */
+    border-radius: 0 0 0 8px; /* Rounded corner */
+}
+
+.links-container div a img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.link-item{
+    padding: 4px;
+    display: inline;
+}
+.threeDivider{
+    display: flex;
+}
+
+.links-container{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon-credits{
+    margin-top: 2cm;
+}
+.icon-credits p, .icon-credits p a{
+    font-size: 10px;
+}
