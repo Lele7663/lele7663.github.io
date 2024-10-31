@@ -17,7 +17,7 @@ This is my personal website, built with HTML, CSS, and JavaScript. It includes s
 - **Projects:** Showcase of projects I've worked on.
 - **Contact Information:** Easy ways to get in touch.
 - **Status Updates:** A section for roadmap and ongoing updates.
-- **Responsive Design:** Looks great on all devices.
+- **Responsive Design:** Looks great on many devices.
 
 
 ## License
